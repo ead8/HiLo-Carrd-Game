@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hi-Lo Card Game</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="theme-color" content="#aa6c39">
+</head>
+
+<body>
+<div id="container">
+  <h1>Hi-Lo Card Game</h1>
+  <div id="card-container">
+    <img id="card" src="img/BACK.png" alt="Card">
+  </div>
+  <p class="balance">Balance: $<span id="balance">1000</span></p>
+  <p id="guess">Your Guess: -</p>
+  <button class="btn" id="higher">Higher</button>
+  <button class="btn" id="lower">Lower</button>
+  <button class="btn" id="same">Same</button>
+  <button class="btn" id="deal">Deal</button>
+  <input id="bet" type="number" min="1" step="1" placeholder="Bet amount">
+</div>
+<div id="odds-section">
+  <p>Odds:</p>
+  <p>Higher: <span id="odds-higher">-</span></p>
+  <p>Lower: <span id="odds-lower">-</span></p>
+  <p>Same: <span id="odds-same">-</span></p>
+</div>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span id="popup-text">You Win!</span>
+    <button id="popup-close" class="btn">Cancel</button>
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+
+</html>
